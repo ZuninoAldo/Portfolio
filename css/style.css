@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Raleway', 'ubuntu', 'sans-serif';
+    background: rgb(131, 131, 131);
+    background: radial-gradient(circle, rgba(131, 131, 131, 1) 0%, rgba(61, 61, 61, 1) 100%);
+}
+
+.navbar {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(40px);
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+    border: 2px solid rgba(255, 255, 255, 0.18);
+}
+
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 0;
+}
+
+.navbar a {
+    transition: all 1s;
+}
+
+.navbar-nav a:hover {
+    transform: scale(1.2);
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.nav-link {
+    color: white;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+header {
+    font-size: x-large;
+}
+
+/*------------------INDEX-------------------*/
+
+.hero-section img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 20px;
+    border-radius: 50%;
+    filter: drop-shadow(10px 10px 9px #000000);
+    -webkit-filter: drop-shadow(10px 10px 9px #000000);
+    -moz-filter: drop-shadow(10px 10px 9px #000000);
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 30px;
+    margin-bottom: 100px;
+}
+
+.titulos-principales {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.titulos-principales h2 {
+    background-color: black;
+    width: 80%;
+    margin-top: 30px;
+    border-radius: 20px;
+    box-shadow: 13px 9px 16px 0px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: 13px 9px 16px 0px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 13px 9px 16px 0px rgba(0, 0, 0, 0.8);
+}
+
+/*--------------SOBRE-MI-------------------*/
+.title {
+    text-align: center;
+    color: white;
+    margin: 15px;
+}
+
+.subtitle {
+    text-align: center;
+    color: lightgrey;
+    font-size: large;
+    margin-top: 35px;
+}
+
+.subtitle-2 {
+    text-align: center;
+    color: lightgrey;
+    font-size: large;
+    margin-bottom: 50px;
+}
+
+.grid-prueba img {
+    width: 250px;
+    height: 250px;
+    transition: all 1s;
+}
+
+.grid-prueba img:hover {
+    transform: scale(1.1);
+}
+
+.grid-prueba {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 300px;
+    gap: 60px;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.uno {
+    grid-column: span 3;
+}
+
+.dos {
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+.tres {
+    grid-column: span 3;
+}
+
+.tarjeta-horizontal {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.parrafo {
+    width: 60%;
+    padding: 10px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 28px;
+}
+
+/*--------------CONOCIMIENTOS--------------*/
+
+.logotipos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 300px;
+    align-items: center;
+    gap: 60px;
+}
+
+.logotipos img {
+    transition: all 1s;
+}
+
+.logotipos img:hover {
+    transform: scale(1.3);
+}
+
+/*--------------PROYECTOS------------------*/
+
+.tarjeta img {
+    width: 800px;
+    height: 300px;
+    border-radius: 28px;
+    object-fit: fill;
+    transition: all 1s;
+}
+
+.tarjeta p {
+    width: 500px;
+    height: 100px;
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
+    color: white;
+    border-radius: 28px;
+    backdrop-filter: blur(40px);
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+    border: 2px solid rgba(255, 255, 255, 0.18);
+}
+
+.tarjeta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.tarjeta img:hover {
+    transform: scale(1.1);
+}
+
+/*--------------CONTACTO-------------------*/
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 230px;
+}
+.contactame {
+        width: 50%;
+        height: 300px;
+        padding: 30px;
+}
+
+.contactame h4 {
+    color: white;
+    text-decoration: underline;
+    font-size: x-large;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+input {
+    width: 100%;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(164, 164, 164, 0.59);
+}
+
+textarea {
+    width: 100%;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(164, 164, 164, 0.59);
+}
+
+#enviar {
+    font-size: 18px;
+    backdrop-filter: blur(40px);
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    margin-top: 4px;
+}
+
+/*?--------------FOOTER--------------------*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-wrap: wrap;
+    font-size: 84px;
+}
+
+footer i {
+    padding-inline: 30px;
+}
+
+/*----------------------MQ---------------*/
+
+@media screen and (max-width: 950px) {
+
+    .grid-prueba {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .logotipos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 80px;
+    }
+
+    .tarjeta img {
+        width: 600px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .grid-prueba img {
+        width: 200px;
+        height: 200px;
+        margin: 18px;
+    }
+
+    .tarjeta img {
+        width: 400px;
+        height: 200px;
+    }
+
+    .tarjeta p {
+        width: 300px;
+        height: 160px;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .subtitle, .subtitle-2 {
+        display: none;
+    }
+
+    .tarjeta img {
+        width: 350px;
+        height: 200px;
+    }
+
+    .tarjeta p {
+        width: 300px;
+        height: 160px;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .tarjeta img {
+        width: 200px;
+        height: 300px;
+    }
+
+    .tarjeta p {
+        width: 200px;
+        height: 240px;
+        text-align: center;
+    }
+}
+
+/*? Codex done by Unholy Paladin */
